@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Animations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .svg1 {
+        animation: rotate 0.5s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(7200deg);
+        }
+      }
+
+      .svg2 {
+        animation: bounce 0.1s ease-in-out infinite;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .svg3 {
+        animation: fade 0.1s ease-in-out infinite;
+      }
+
+      @keyframes fade {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      #path38 {
+      animation: movePath 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes movePath {
+      0% {
+        transform: translateX(0);
+        fill: #000;
+      }
+      100% {
+        transform: translateX(10px);
+        fill: #ff0000;
+      }
+    }
+
+    #path40 {
+      animation: rotatePath 3s linear infinite;
+    }
+
+    @keyframes rotatePath {
+      0% {
+        transform: rotate(0deg);
+        fill: #000;
+      }
+      100% {
+        transform: rotate(360deg);
+        fill: #00ff00;
+      }
+    }
+
+    #path41 {
+      animation: scalePath 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes scalePath {
+      0% {
+        transform: scale(1);
+        fill: #000;
+      }
+      100% {
+        transform: scale(1.2);
+        fill: #0000ff;
+      }
+    }
+
+    #path43 {
+      animation: fadePath 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadePath {
+      0% {
+        opacity: 1;
+        fill: #fb7373;
+      }
+      100% {
+        opacity: 0.5;
+        fill: #ffcc00;
+      }
+    }
+
+    .svg4 {
+      animation: spin-scale-opacity 3s ease-in-out infinite;
+    }
+
+    @keyframes spin-scale-opacity {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.8);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    </style>
+  </head>
+  <body class="bg-light">
+      <div class="container my-5">
+        <h1 class="text-center mb-4">SVG Animations</h1>
+        <section class="row mb-4 d-flex justify-content-between">
+          <div class="col-5 text-center">
+            <h2>Excercici 1</h2>
+            <img src="Apple.svg" class="svg1" width="100px" alt="Apple" />
+          </div>
+          <div class="col-5 text-center">
+            <h2>Excercici 2</h2>
+            <img src="wxkdcrgkyhl6bc7mew10.svg" class="svg2" width="100px" alt="Second SVG" />
+          </div>
+        </section>
+
+        <section class="row mb-4 d-flex justify-content-between">
+          <div class="col-5 text-center">
+            <h2>Excercici 3</h2>
+            <svg version="1.1"
+        id="svg1"
+        width="100"
+        height="100"
+        viewBox="0 0 621.34473 620.44672"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg">
+       <defs
+          id="defs1" />
+       <g
+          id="layer3"
+          style="fill:#000000;fill-opacity:0.997041;stroke:#000000;stroke-opacity:1"
+          transform="translate(-203.33109,-170.09911)">
+         <path
+            style="fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-width:4;stroke-opacity:1"
+            d="m 372.76993,304.14637 281.27185,-1.412 v 49.70265 l 6.21283,33.32337 1.12961,12.99047 -8.47204,9.60165 c -25.6975,-31.93373 -47.23167,-66.4295 -110.70138,-75.11879 -111.20317,-16.04655 -150.50509,70.13969 -35.58258,77.378 45.24311,7.41004 97.43524,6.13381 125.95105,34.45298 14.26525,13.47191 19.15392,29.28797 21.46251,45.74904 l -94.72147,109.99952 -9.20227,-25.84389 c 18.78112,-8.40016 33.48347,-20.47123 37.277,-42.36022 -2.42572,-19.81331 -14.39722,-37.31249 -66.08194,-45.18423 -43.88186,-7.998 -86.92698,-0.93462 -132.16389,-33.32337 -28.0299,-22.63441 -28.32599,-57.32701 -22.02731,-94.88689 z"
+            id="path38" />
+         <path
+            style="fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-width:4;stroke-opacity:1"
+            d="M 368.54719,307.79015 273.57254,414.55227 512.51635,713.0031 531.87189,685.72855 316.30577,414.95164 365.82839,355.44462 Z"
+            id="path40" />
+         <path
+            style="fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-width:4;stroke-opacity:1"
+            d="m 422.75499,547.85883 c 42.72308,29.59512 85.10751,41.99532 124.82144,27.95775 l 9.88405,26.82814 c -30.39613,3.77056 -60.7115,8.00548 -94.03968,-5.08323 z"
+            id="path41" />
+         <path
+            style="opacity:1;fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-width:4;stroke-opacity:1"
+            d="m 512.84105,657.9954 198.81063,-242.30045 -55.35069,-62.69312 0.5648,-47.44345 94.8869,111.26618 -219.14354,268.28139 z"
+            id="path42" />
+         <path
+            style="fill:#fb7373;fill-opacity:0.994083;stroke:#fb7373;stroke-opacity:1"
+            d="m 762.48394,441.67588 -233.8284,292.00311 c 73.12854,-9.794 122.53263,-25.58785 191.46818,-106.74775 59.52243,-96.08039 40.40174,-132.69892 42.36022,-185.25536 z"
+            id="path43" />
+         <path
+            style="fill:#fb7373;fill-opacity:0.994083;stroke:#fb7373;stroke-opacity:1"
+            d="M 499.1729,732.43573 261.30929,443.71016 c -5.40613,73.58316 -0.0761,125.17581 65.22742,209.28578 81.83688,77.95565 121.59757,66.74828 172.63619,79.43979 z"
+            id="path43-6" />
+         <path
+            style="fill:#fb7373;fill-opacity:0.994083;stroke:#fb7373;stroke-opacity:1"
+            d="m 362.60348,275.62383 299.91035,2.25921 c -31.50945,-24.63201 -69.24346,-46.45293 -146.84876,-50.26746 -72.82323,-0.11229 -114.29213,22.95036 -153.06159,48.00825 z"
+            id="path44" />
+         <path
+            style="fill:#fb7373;fill-opacity:0.994083;stroke:#fb7373;stroke-opacity:1"
+            d="m 360.90907,276.75343 -72.85958,85.85005 c 7.75067,-12.23555 4.76832,-11.43814 31.62896,-46.87865 12.02024,-15.1446 26.21242,-27.57425 41.23062,-38.9714 z"
+            id="path45" />
+         <path
+            style="fill:#fb7373;fill-opacity:0.994083;stroke:#fb7373;stroke-opacity:1"
+            d="m 666.46745,279.57745 71.72997,84.15563 c -10.25643,-16.50549 -18.62609,-33.32544 -33.04097,-49.13785 -11.82508,-13.54728 -25.43718,-23.96729 -38.689,-35.01778 z"
+            id="path46" />
+         <path
+            style="opacity:1;fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-opacity:1"
+            d="m 510.26545,170.60206 0.79875,35.14509 c 135.50693,-4.82466 273.50777,98.66988 280.36194,280.36193 -19.24333,247.45737 -249.19959,273.40197 -281.16069,267.5819 l -1.5975,35.14509 C 566.1397,794.52322 804.77352,758.33451 824.17497,485.31033 824.515,348.96407 719.7842,169.76098 510.26545,170.60206 Z"
+            id="path47" />
+         <path
+            style="fill:#000000;fill-opacity:0.994083;stroke:#000000;stroke-opacity:1"
+            d="m 515.6667,790.0445 -0.56666,-35.1496 C 379.56421,758.82467 242.24977,654.42114 236.5955,472.68777 257.47245,225.36288 487.59501,200.9373 519.51699,206.96829 l 1.82953,-35.13377 C 463.91358,165.768 225.04599,200.38015 203.84211,473.27027 202.60177,609.6113 306.14696,789.50206 515.6667,790.0445 Z"
+            id="path47-3" />
+       </g>
+     </svg>    
+          </div>
+          <div class="col-5 text-center">
+            <h2>Excercici 4</h2>
+            <img src="280-2809779_spongebob-spongebobsquarepants-patrick-patrickstar-pinhead-patrick.svg" class="svg4" width="100px" alt="Fourth SVG" />
+          </div>
+        </section>
+    </div>
+  </body>
+</html>
